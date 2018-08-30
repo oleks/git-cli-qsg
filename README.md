@@ -344,6 +344,9 @@ $ git config --global commit.gpgsign true
 $ git config --global user.signingkey <keyid>
 ```
 
+If you also submit your public GPG key to GitHub, a nice green
+"VERIFIED" icon will appear alongside your commits.
+
 ## Making Changes
 
 As you make changes to the files that Git is tracking, `git status`

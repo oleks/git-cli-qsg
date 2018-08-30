@@ -67,10 +67,6 @@ Since Git emerged in the Linux community, it has a good command-line
 interface. Professionals today primarily use Git from the
 command-line.
 
-
-command-line based. This guide serves to provide a brief guide to this
-command-line interface.
-
 ## Getting a Repository
 
 In Git parlance, a hierarchy of files, maintained as a project in Git,

@@ -219,8 +219,11 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-The `.gitignore` should be added to Git, so that your collaborators
-too can have each their own, private `hello-git.txt`:
+As you can see, `hello-git.txt` no longer shows up among the untracked
+files; it is ignored.
+
+The `.gitignore` file however, should be added to Git, so that your
+collaborators too can have each their own, private `hello-git.txt`:
 
 ```
 $ git add .gitignore

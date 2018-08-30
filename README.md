@@ -480,6 +480,16 @@ Git only supports conflict resolution locally. Therefore, if there are
 changes on your remote which you have not yet synchronized into your
 clone, you will have to pull before you push.
 
+## Concluding Remarks
+
+This guide gave a crash course on using Git and GitHub from the
+command-line. There is much more to Git and GitHub than this. In
+particular, this guide has not discussed branches, forks, and how to
+handle merge conflicts. All of these are central element of the
+Git+GitHub workflow when teams are not in close proximity. This
+toolset will only work for you if you are a small team, where you
+coordinate to reduce the chance of conflicts.
+
 ## Command Glossary
 
   * `git status <path>` — check the state of the repo at `<path>`

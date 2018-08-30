@@ -257,7 +257,9 @@ what the commit will do if applied. As you write the subject line,
 think "If applied, this commit will ..."
 
 For example, `Fix bug #42`, `Correct a type-o`, `Add a guide on
-writing good commit messages`.
+writing good commit messages`. As an exception to this rule, it is
+customary for the first commit to have the subject line `Initial
+commit`.
 
 Sometimes, 50 characters doesn't cut it. You should still come up with
 a 50-character subject line, but you can provide additional details

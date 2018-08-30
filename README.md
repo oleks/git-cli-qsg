@@ -74,9 +74,9 @@ open-source projects.
 
 ## The Rest of This Guide
 
-Since Git emerged in the Linux community, it has a good command-line
-interface. Professionals today primarily use Git from the
-command-line.
+Since Git emerged in the Linux community, the most mature Git
+interface is a command-line interface. Professionals today primarily
+use Git from the command-line.
 
 ## Getting a Repository
 

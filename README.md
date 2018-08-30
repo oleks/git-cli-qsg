@@ -329,6 +329,21 @@ $ git config --global core.editor "atom --wait"
 $ git config --global core.editor "subl -n -w"
 ```
 
+### Signing Your Commits
+
+Git and GitHub offer little security out of the box. Your SSH-key must
+match to upload and download changes from GitHub, but no guarantee is
+provided out of the box that the changes you upload are done by _you_.
+
+It is therefore good practice to sign your commits with your GPG key.
+
+To set this up:
+
+```
+$ git config --global commit.gpgsign true
+$ git config --global user.signingkey <keyid>
+```
+
 ## Making Changes
 
 As you make changes to the files that Git is tracking, `git status`

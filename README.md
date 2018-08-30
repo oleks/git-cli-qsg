@@ -258,7 +258,7 @@ $ git commit -m 'Initial commit'
 ```
 
 Although `-m` reads like "message" (i.e., commit message), you should
-really think of it as a subject-line (e.g., e-mail subject line). It
+really think of it as a subject line (e.g., e-mail subject line). It
 should be very short and to the point. Shorter than a tweet,
 preferably 50 characters or less.
 
@@ -508,7 +508,7 @@ the chance of conflicts.
   * `git add -p <path>` — selectively add changes at `<path>` to next
     commit
   * `git reset <path>` — reset addition of `<path>` to next commit
-  * `git commit -m <subject-line>` — commit with a quick short
+  * `git commit -m <subject line>` — commit with a quick short
     message
   * `git commit` — commit with a longer message (opens text-editor)
   * `git commit --amend` — amend the previous commit (opens

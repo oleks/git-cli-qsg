@@ -238,6 +238,108 @@ Changes to be committed:
 	new file:   .gitignore
 ```
 
+## Committing Changes
+
+Once you have some changes to be committed, you can commit quickly:
+
+```
+$ git commit -m 'Initial commit'
+```
+
+Although `-m` reads like "message" (i.e., commit message), you should
+really think of it like a subject-line (e.g., e-mail subject line). It
+should be very short and to the point. Shorter than a Twitter message,
+preferably 50 characters or less.
+
+There is some additional culture to this subject line: It should begin
+with a capital letter, and should not end with a dot. It should say
+what the commit will do if applied. As you write the subject line,
+think "If applied, this commit will ..."
+
+For example, `Fix bug #42`, `Correct a type-o`, `Add a guide on
+writing good commit messages`.
+
+Sometimes, 50 characters doesn't cut it. You should still come up with
+a 50-character subject line, but you can provide additional details
+below the subject line in a longer commit message. To let you write
+the longer commit message, Git will direct you to a text-editor (by
+default, `vim`, but see below):
+
+```
+$ git commit
+(opens editor)
+```
+
+This will open up a text-editor where in the top line you can provide
+your 50-character subject line, and below, separated by an extra line
+break, provide more details about your commit.
+
+The commit will take place as soon as you save and close the text
+editor. (In `vim`, `:wq` or `:x`.)
+
+For more on how to write good commit messages see [this
+guide](https://chris.beams.io/posts/git-commit/).
+
+### Amending Commits
+
+It is common to make mistakes as you commit. Git is more than willing
+to amend your commits. This is best done _before_ you synchronize with
+your peers, otherwise considerable divergence ensues.
+
+To amend the previous commit, add the changes you have, or simply
+issue the following command if you merely wish to amend the commit
+message:
+
+```
+$ git commit --amend
+```
+
+This will open up a text editor, as with mere `git commit`.
+
+### Changing the Default Text-Editor
+
+Depending on your text-editor of choice, issue one of the following
+commands (add your favourite text-editor below).
+
+#### Emacs
+
+```
+$ git config --global core.editor emacs
+```
+
+#### Vim
+
+```
+$ git config --global core.editor vim
+```
+
+#### Atom
+
+```
+$ git config --global core.editor "atom --wait"
+```
+
+#### Sublime
+
+```
+$ git config --global core.editor "subl -n -w"
+```
+
+## Making Changes
+
+Before we learn to commit, we can already learn to make some changes.
+
+For instance, writing `hello-git.txt` might have been a bit too
+specific, and we would really like to ignore _all_ `.txt` files. Using
+your favourite text editor, change `hello-git.txt` in `.gitignore` to
+`*.txt`. `.gitignore` supports a [range of pattern
+formats](https://git-scm.com/docs/gitignore#_pattern_format).
+
+Alternatively, if you added `hello-git.txt`, write something to that
+file to induce a change.
+
+
+
 distinguish between untracked files, and uncommitted changes.
 
 ## Command Glossary
@@ -246,3 +348,8 @@ distinguish between untracked files, and uncommitted changes.
   * `git add <path>` — add the entire `<path>` to next commit
   * `git add -p <path>` — selectively add changes at `<path>` to next
     commit
+  * `git commit -m <subject-line>` — commit with a quick short
+    message
+  * `git commit` — commit with a longer message (opens text-editor)
+  * `git commit --amend` — amend the previous commit (opens
+    text-editor, in case you also want to amend the message)

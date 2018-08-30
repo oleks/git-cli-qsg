@@ -36,7 +36,11 @@ sticks to comparing files line-by-line. This is a pity.
 Overall, Git is ill-suited for many types of files (e.g., binary
 files, PDFs, images, videos). This does not mean that you cannot
 manage them using Git, but their revision control will not be
-efficient.
+efficient: The power of Git comes from the capability to compute the
+difference between file revisions. Many file-types have no inherent
+support for doing this. However, even for those that do, Git makes no
+attempt at supporting them. Git sticks to good support for text-based
+files, suitable for line-by-line comparison. This too is a pity.
 
 ## In Comparison to Other Options
 

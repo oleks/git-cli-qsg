@@ -77,12 +77,28 @@ do is to "clone" the repository from some host to your own machine.
 To clone a Git repository you are best off with its Git URL (there are
 also HTTP URLs, but these are considered clumsy). If you are familiar
 with SSH and `scp` (secure copy), you might recognize the Git URL
-format. This is because under the covers, Git performs a secure copy
-of files, from the given host, to your machine.
+format. For instance, the Git URL of this repository, as hosted on
+GitHub, is `git@github.com:oleks/git-cli-qsg.git`. This resemblance is
+not incidental, Git uses good old `scp` behind the scenes.
+
+To clone this repository, go to a suitable parent directory, and
+execute the following command:
 
 ```
-$ git clone git@github.com:oleks/git-cli-quickstart.
+$ git clone git@github.com:oleks/git-cli-qsg.git
 ```
+
+If instead you would like to start a new repository from scratch:
+
+```
+$ git init git-cli-qsg
+```
+
+In either case, a directory `git-cli-qsg` will be created, although in
+the latter case, you are free to choose another name! A directory
+containing a Git repository will always have a `.git` subdirectory.
+This subdirectory contains essential metadata that makes the directory
+a Git repository.
 
 ## Checking Status
 

@@ -70,9 +70,9 @@ command-line.
 ## Getting a Repository
 
 In Git parlance, a hierarchy of files, maintained as a project in Git,
-is called a "repository". If you are joining a pre-existing project,
-the first thing to do is to "clone" the repository from some host to
-your own machine.
+is called a "repository". If you are joining an existing project, the
+first thing to do is to "clone" the repository from some host to your
+own machine.
 
 To clone a Git repository you are best off with its Git-URL (there are
 also HTTP URLs, but these are considered clumsy). If you are familiar

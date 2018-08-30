@@ -140,12 +140,13 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-As you make changes to a large repository, the status of the entire
-repository can become overwhelming. Arguably, you should have
-committed along the way, but if you didn't yet know better, it is good
-to know that `git status` takes a path as an optional argument. This
-way, you can ask for the status of a particular directory, not the
-entire Git repository, and commit changes a directory at a time:
+As you make changes to a large repository, and don't commit
+sufficiently often along the way, the status of the entire repository
+can become overwhelming. Arguably, you should have committed along the
+way, but if you didn't yet know better, it is good to know that `git
+status` _takes a path as an optional argument_. This way, you can ask
+for the status of a particular directory, not the entire Git
+repository, and commit changes one directory at a time:
 
 ```
 $ git status .

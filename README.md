@@ -128,7 +128,7 @@ Your branch is up to date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 
-If instead you created a fresh repository, you status will look like
+If instead you created a fresh repository, your status will look like
 this:
 
 ```

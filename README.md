@@ -45,11 +45,13 @@ files, suitable for line-by-line comparison. This too is a pity.
 ## In Comparison to Other Options
 
 Git provides you with many of the features of a popular distributed
-revision control service (e.g., Dropbox). The Git workflow however, is
-more explicit, where it is your responsibility to initiate
-synchronization, and to handle synchronization conflicts when they
-arise. This has the added-in benefit, that with due patience, no messy
-synchronizations take place.
+revision control service (e.g., Dropbox). Storing ill-supported files
+in Git, is not necessarily less efficient than storing them in such
+services, in terms of space. The Git workflow however, is more
+explicit, where it is your responsibility to initiate synchronization,
+and to handle synchronization conflicts when they arise. This has the
+added-in benefit, that with due patience, no messy synchronizations
+take place.
 
 ## GitHub
 

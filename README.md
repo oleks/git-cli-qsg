@@ -28,10 +28,10 @@ where (1) bytes signify characters, and (2) a line break character
 occurs at least every 70-80 characters or so.
 
 Such files (e.g., source code files) are often structured in semantic
-blocks, with blocks delimited by designated symbols, suitably
-indented, or separated by a systematic number of line breaks. Git
-makes no attempt at understanding these semantic blocks, and sticks to
-comparing files line-by-line. This is a pity.
+blocks, with blocks delimited by designated symbols (e.g., `{}`),
+suitably indented, or separated by a systematic number of line breaks.
+Git makes no attempt at understanding these semantic blocks, and
+sticks to comparing files line-by-line. This is a pity.
 
 This makes Git ill-suited for many types of files (e.g., binary
 files). This does not mean that you cannot manage them using Git, but

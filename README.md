@@ -496,10 +496,10 @@ clone, you will have to pull before you push.
 This guide gave a crash course on using Git and GitHub from the
 command-line. There is much more to Git and GitHub than this. In
 particular, this guide has not discussed branches, forks, and how to
-handle merge conflicts. All of these are central element of the
-Git+GitHub workflow when teams are not in close proximity. This
-toolset will only work for you if you are a small team, where you
-coordinate to reduce the chance of conflicts.
+handle merge conflicts. All of these are central to the Git+GitHub
+workflow when teams are not in close proximity. This toolset will only
+work for you if you are a small team, where you coordinate to reduce
+the chance of conflicts.
 
 ## Command Glossary
 

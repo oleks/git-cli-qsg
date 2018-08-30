@@ -100,6 +100,12 @@ containing a Git repository will always have a `.git` subdirectory.
 This subdirectory contains essential metadata that makes the directory
 a Git repository.
 
+Before you continue, go on inside the repository directory:
+
+```
+$ cd git-cli-qsg
+```
+
 ## Checking Status
 
 Once you have a Git repository, you can navigate to this directory in

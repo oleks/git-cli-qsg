@@ -411,9 +411,8 @@ something by mistake. To undo the last commit:
 $ git reset HEAD~
 ```
 
-This will undo the commit, but everything you added to this commit, is
-still staged for (a new) commit. You can proceed to `git reset` and
-`git add -p` as necessary, before you commit again.
+This will undo the commit, and reset everything you added before. You
+can proceed to `git add -p` as necessary, before you commit again.
 
 To commit with the original message as a starting point in a text-editor:
 

@@ -20,6 +20,17 @@ you can always reliably trace back the changes that led to the current
 state of the project, and trace the reasoning behind those changes.
 Using Git however, requires some forbearance.
 
+## Getting Started
+
+The target audience of this guide are Computer Science students,
+already familiar with basic programming, and familiar with the
+command-line.
+
+To get started, you should [download
+Git](https://git-scm.com/downloads). After the installation, macOS and
+Linux users should open up a terminal; Windows users should open up
+Git BASH.
+
 ## Most Suitable File Types
 
 For incidental, historical reasons, Git works best with hierarchies of

@@ -16,8 +16,9 @@ which again, should be small, incremental, and justifiable by a
 handful of words—a commit message.
 
 Overall, Git enables you to develop your project in such a way that
-you can always reliably trace the reason for every change in the
-project. Getting there however, requires some forbearance.
+you can always reliably trace back the changes that led to the current
+state of the project, and trace the reasoning behind those changes.
+Using Git however, requires some forbearance.
 
 ## Most Suitable File Types
 

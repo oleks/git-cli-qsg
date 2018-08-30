@@ -210,8 +210,8 @@ Changes to be committed:
 
 ```
 
-If instead you don't want to track a file in Git, you should add the
-path to it to a special file called `.gitignore`:
+If you **don't** want to track a file in Git, you should add the path
+to it to a special file called `.gitignore`:
 
 ```
 $ echo hello-git.txt >> .gitignore

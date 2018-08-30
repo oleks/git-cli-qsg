@@ -258,8 +258,8 @@ $ git commit -m 'Initial commit'
 ```
 
 Although `-m` reads like "message" (i.e., commit message), you should
-really think of it like a subject-line (e.g., e-mail subject line). It
-should be very short and to the point. Shorter than a Twitter message,
+really think of it as a subject-line (e.g., e-mail subject line). It
+should be very short and to the point. Shorter than a tweet,
 preferably 50 characters or less.
 
 There is some additional culture to this subject line: It should begin

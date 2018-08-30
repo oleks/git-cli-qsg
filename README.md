@@ -438,6 +438,48 @@ To commit with the original message as a starting point in a text-editor:
 git commit -c ORIG_HEAD
 ```
 
+## Synchronizing
+
+Before you synchronize, it is best to make sure that you have no
+uncommitted changes, and that your working tree is clean. Check `git
+status`! Things go haywire if you have changes which contradict the
+changes of your peers, and those changes haven't been committed yet.
+It is hard enough to merge when changes have been committed.
+
+Symmetrically, you should frequently synchronize before you make local
+changes, to reduce the divergence and the chance of conflicts.
+
+Although Git was designed for _distributed_ revision control, it is
+today most frequently used with some sort of central intermediary
+(e.g., GitHub).
+
+To pull the changes of your peers:
+
+```
+$ git pull --rebase
+```
+
+The `--rebase` argument makes sure to pull the changes of others
+first, and attempts to apply your changes on top. Supplying `--rebase`
+is akin to holding the door for your peers. Without it, Git will
+attempt to interleave the changes, which often results in more
+conflicts.
+
+To push your changes for your peers to pull:
+
+```
+$ git push
+```
+
+These "shorthands" are only available if you have a "remote" set up
+for your current "branch". This will be done automatically if you
+cloned the repository. Otherwise, if this is a fresh repository, then
+follow the guide on GitHub for how to set this up.
+
+Git only supports conflict resolution locally. Therefore, if there are
+changes on your remote which you have not yet synchronized into your
+clone, you will have to pull before you push.
+
 ## Command Glossary
 
   * `git status <path>` — check the state of the repo at `<path>`
@@ -450,3 +492,5 @@ git commit -c ORIG_HEAD
   * `git commit` — commit with a longer message (opens text-editor)
   * `git commit --amend` — amend the previous commit (opens
     text-editor, in case you also want to amend the message)
+  * `git pull --rebase` — pull changes and apply local ones on top
+  * `git push` — push the local changes

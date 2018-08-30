@@ -298,7 +298,7 @@ guide](https://chris.beams.io/posts/git-commit/).
 
 It is common to make mistakes as you commit. Git is more than willing
 to amend your commits. This is best done _before_ you synchronize with
-your peers, otherwise you'd have to synchronize already synchronized
+your peers, otherwise you'd have to synchronize "already synchronized"
 commits; not a very pleasant experience.
 
 To amend the previous commit, add the changes you have, or simply

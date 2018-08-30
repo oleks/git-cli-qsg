@@ -390,12 +390,22 @@ the "hunk" in a text editor, where you can manually change the change.
 Once you've added all the changes you want, commit, and iterate until
 no changes remain.
 
+### Resetting
+
+If you make a mistake while adding changes (e.g., accidentally pressed
+`y` instead of `n`), you can "reset" your additions for a file:
+
+```
+$ git reset .gitignore
+```
+
 ## Command Glossary
 
   * `git status <path>` — check the state of the repo at `<path>`
   * `git add <path>` — add the entire `<path>` to next commit
   * `git add -p <path>` — selectively add changes at `<path>` to next
     commit
+  * `git reset <path>` — reset addition of `<path>` to next commit
   * `git commit -m <subject-line>` — commit with a quick short
     message
   * `git commit` — commit with a longer message (opens text-editor)

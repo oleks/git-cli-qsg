@@ -381,11 +381,11 @@ Stage this hunk [y,n,q,a,d,/,e,?]?
 time", and for each change ask if you want to "stage this hunk" to
 committed.
 
-The options you should memorise are `y` (yes), `n` (no), `s` (split),
-`e` (edit), and `?` (help). `s` lets you ask Git to split a hunk if it
-is too big (best split over multiple commits). This does not always
-work, and this is when `e` comes in handy. `e` will open the "hunk" in
-a text editor, where you can manually change the change.
+The options you should memorise are `y` (yes), `n` (no), `q` (quit),
+`s` (split), `e` (edit), and `?` (help). `s` lets you ask Git to split
+a hunk if it is too big (best split over multiple commits). This does
+not always work, and this is when `e` comes in handy. `e` will open
+the "hunk" in a text editor, where you can manually change the change.
 
 Once you've added all the changes you want, commit, and iterate until
 no changes remain.

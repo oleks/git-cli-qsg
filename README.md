@@ -237,4 +237,9 @@ Changes to be committed:
 
 distinguish between untracked files, and uncommitted changes.
 
+## Command Glossary
 
+  * `git status <path>` — check the state of the repo at `<path>`
+  * `git add <path>` — add the entire `<path>` to next commit
+  * `git add -p <path>` — selectively add changes at `<path>` to next
+    commit

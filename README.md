@@ -399,6 +399,28 @@ If you make a mistake while adding changes (e.g., accidentally pressed
 $ git reset .gitignore
 ```
 
+Reset will also reset the tracking status of a file, if the file
+wasn't previously tracked.
+
+## Undo/Change Last Commit
+
+Sometimes, you not only add something by mistake, but also commit
+something by mistake. To undo the last commit:
+
+```
+$ git reset HEAD~
+```
+
+This will undo the commit, but everything you added to this commit, is
+still staged for (a new) commit. You can proceed to `git reset` and
+`git add -p` as necessary, before you commit again.
+
+To commit with the original message as a starting point in a text-editor:
+
+```
+git commit -c ORIG_HEAD
+```
+
 ## Command Glossary
 
   * `git status <path>` — check the state of the repo at `<path>`

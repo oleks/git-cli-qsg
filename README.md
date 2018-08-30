@@ -6,7 +6,7 @@ file hierarchy, and provides tools to synchronise the copies later.
 
 The philosophy of Git is that a project should, at each end of the
 line, evolve in small, incremental steps, each step justified by a
-handful of words---a commit message. Sporadic, large, and unjustified
+handful of words—a commit message. Sporadic, large, and unjustified
 changes, do not look good in Git, and are frowned upon.
 
 Participants should synchronize frequently. A synchronization, or a

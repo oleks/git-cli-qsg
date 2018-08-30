@@ -275,7 +275,8 @@ your 50-character subject line, and below, separated by an extra line
 break, provide more details about your commit.
 
 The commit will take place as soon as you save and close the text
-editor. (In `vim`, `:wq` or `:x`.)
+editor (in `vim`, `:wq` or `:x`). The commit will abort if you exit
+without saving (in `vim`, `:q`).
 
 For more on how to write good commit messages see [this
 guide](https://chris.beams.io/posts/git-commit/).

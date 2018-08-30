@@ -331,20 +331,64 @@ $ git config --global core.editor "subl -n -w"
 
 ## Making Changes
 
-Before we learn to commit, we can already learn to make some changes.
+As you make changes to the files that Git is tracking, `git status`
+will let you know when there are files that have changed since last
+commit. 
 
-For instance, writing `hello-git.txt` might have been a bit too
-specific, and we would really like to ignore _all_ `.txt` files. Using
-your favourite text editor, change `hello-git.txt` in `.gitignore` to
-`*.txt`. `.gitignore` supports a [range of pattern
+For instance, writing `hello-git.txt` to `.gitignore` might have been
+a bit too specific, and we would really like to ignore _all_ `.txt`
+files. Using your favourite text editor, you can change
+`hello-git.txt` in `.gitignore` to `*.txt`. `.gitignore` supports a
+[range of pattern
 formats](https://git-scm.com/docs/gitignore#_pattern_format).
 
 Alternatively, if you added `hello-git.txt`, write something to that
 file to induce a change.
 
+```
+$ git status .
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
 
+	modified:   .gitignore
 
-distinguish between untracked files, and uncommitted changes.
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Although you _can_ add the entire file to a commit, it is a common
+misconception that all your changes to a file are best justified by
+one commit message. Besides, it can be good to refresh your memory on
+what you've done!
+
+It is therefore **strongly recommended** that you selectively add your
+changes to a file in preparation for a commit:
+
+```
+$ git add -p .gitignore 
+diff --git a/.gitignore b/.gitignore
+index f07e6d3..2211df6 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1 @@
+-hello-git.txt
++*.txt
+Stage this hunk [y,n,q,a,d,/,e,?]?
+```
+
+`git add -p` will go through its best estimate of "one change at a
+time", and for each change ask if you want to "stage this hunk" to
+committed.
+
+The options you should memorise are `y` (yes), `n` (no), `s` (split),
+`e` (edit), and `?` (help). `s` lets you ask Git to split a hunk if it
+is too big (best split over multiple commits). This does not always
+work, and this is when `e` comes in handy. `e` will open the "hunk" in
+a text editor, where you can manually change the change.
+
+Once you've added all the changes you want, commit, and iterate until
+no changes remain.
 
 ## Command Glossary
 

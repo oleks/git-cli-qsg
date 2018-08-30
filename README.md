@@ -186,7 +186,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Git does not automatically track all the files in the given directory.
+Git does not automatically track all the files in a given directory.
 If Git is not tracking the file, you will not be able to track changes
 to it, and synchronize it with your peers.
 

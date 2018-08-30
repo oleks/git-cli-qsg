@@ -33,9 +33,10 @@ suitably indented, or separated by a systematic number of line breaks.
 Git makes no attempt at understanding these semantic blocks, and
 sticks to comparing files line-by-line. This is a pity.
 
-This makes Git ill-suited for many types of files (e.g., binary
-files). This does not mean that you cannot manage them using Git, but
-their revision control will not be efficient.
+Overall, Git is ill-suited for many types of files (e.g., binary
+files, PDFs, images, videos). This does not mean that you cannot
+manage them using Git, but their revision control will not be
+efficient.
 
 ## In Comparison to Other Options
 

@@ -74,9 +74,9 @@ is called a "repository". A repository is first and foremost a
 directory. If you are joining an existing project, the first thing to
 do is to "clone" the repository from some host to your own machine.
 
-To clone a Git repository you are best off with its Git-URL (there are
+To clone a Git repository you are best off with its Git URL (there are
 also HTTP URLs, but these are considered clumsy). If you are familiar
-with SSH and `scp` (secure copy), you might recognize the Git-URL
+with SSH and `scp` (secure copy), you might recognize the Git URL
 format. This is because under the covers, Git performs a secure copy
 of files, from the given host, to your machine.
 

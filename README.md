@@ -280,7 +280,7 @@ default, `vim`, but see below):
 
 ```
 $ git commit
-(opens editor)
+(opens text-editor)
 ```
 
 This will open up a text-editor where in the top line you can provide

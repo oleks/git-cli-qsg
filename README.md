@@ -108,8 +108,14 @@ $ cd git-cli-qsg
 
 ## Checking Status
 
-Once you have a Git repository, you can navigate to this directory in
-your terminal, and ask for the "status" of the repository.
+Once you have a local clone of the repository, it is common to ponder
+over the state of the local clone. It is good solid advice to always
+check the state of your Git repository before making any changes.
+Days, weeks, and years might have gone by, and you may have
+uncommitted changes lying around. As you go in to make a fresh change,
+it is best left uncluttered by old work.
+
+`git status` gives you a complete overview of the state of your clone.
 
 If you have cloned an existing repository, and have made no changes,
 your status will look something like this:

@@ -155,6 +155,9 @@ Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
 ```
+
+## Tracking Files
+
 As you make changes to the hierarchy of files, this will become
 visible in subsequent status requests:
 
@@ -173,13 +176,13 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Git does not automatically track all the files in the given directory.
-If Git is not tracking the file, it will not be sent along to your
-collaborators. It is important to be vary of what you track in Git,
-and what you don't. Forgetting to track certain files in Git, can
-render your work non-usable elsewhere. Tracking unneeded files
-unnecessarily clutters the repository, and may expose unwanted details
-(e.g., personal data that each collaborator should have, but should
-not share with others).
+If Git is not tracking the file, you will not be able to track changes
+to it, and synchronize it with your peers.
+
+It is important to be vary of what you track in Git, and what you
+don't. Forgetting to track certain files in Git, can render your work
+incomplete for others. Tracking unnecessary files clutters the
+repository, and may unnecessarily expose personal data.
 
 If you want to track a file, you should add it to Git:
 
@@ -197,10 +200,40 @@ Changes to be committed:
 ```
 
 If instead you don't want to track a file in Git, you should add the
-path to a special file called `.gitignore`:
+path to it to a special file called `.gitignore`:
 
+```
+$ echo hello-git.txt >> .gitignore
+$ ls -a
+.  ..  .git  .gitignore  hello-git.txt
+$ git status .
+On branch master
 
+No commits yet
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+The `.gitignore` should be added to Git, so that your collaborators
+too can have each their own, private `hello-git.txt`:
+
+```
+$ git add .gitignore
+$ git status .
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+```
 
 distinguish between untracked files, and uncommitted changes.
 

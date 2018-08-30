@@ -9,7 +9,7 @@ line, evolve in small, incremental steps, each step justified by a
 handful of words—a commit message. Sporadic, large, and unjustified
 changes, do not look good in Git, and are frowned upon.
 
-Participants should synchronize frequently. A synchronization, or a
+Participants should synchronize frequently. A synchronization, or
 "merge", is an interleaved application of multiple sequences of
 changes. Choosing this interleaving is itself a considerable change,
 which again, should be small, incremental, and justifiable by a
